@@ -206,3 +206,9 @@ h2 {
     -o-background-size: cover;
     background-size: cover;
   }
+
+  .sub-title {
+    background-color: rgba(238, 255, 0, 0.274);
+    text-transform: uppercase;
+    padding: 2px 12px;
+}
