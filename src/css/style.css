@@ -138,3 +138,42 @@ h3 {
 h2 {
   font-size: 28px;
 }
+
+
+/**********************/
+/*** HEADER WEBSITE ***/
+/**********************/
+
+
+.nav-link {
+    font-size: 1.2rem;
+    letter-spacing: 1.1px;
+  }
+  
+  #navbarNav a:hover {
+    color: red;
+    transition: 0.3s;
+  }
+  
+  @media (min-width: 992px) {
+    .icons-div {
+      padding-left: 2rem;
+    }
+  }
+  .icons {
+    width: 32px;
+  }
+  
+  #logo {
+    width: 95px;
+    cursor: pointer;
+  }
+  
+  /********************/
+  /*** HOMEPAGE NAV ***/
+  /********************/
+  
+  .homepage-nav-link {
+    color: white;
+  }
+  
