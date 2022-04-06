@@ -1,0 +1,98 @@
+---
+title: Contactez Charles Cantin, photographe
+layout : layout.njk
+---
+
+<h1 class="text-center"> Contact</h1>
+
+    <section class="contact-form mb-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-lg-5 offset-lg-1 contact-container">
+            <h2 class="mb-4">Laissez moi un message</h2>
+            <p class="mb-5 font-italic">
+              P.S : Je vous répondrai au plus vite pour démarrer ensemble votre
+              projet !
+            </p>
+            <form
+              id="my-form"
+              action="https://formspree.io/f/mnqwbpnq"
+              method="POST"
+            >
+              <div class="form-group mb-3">
+                <label for="reponse-selector">Objet de votre demande</label>
+                <select name="reponse-selector" id="reponse-selector">
+                  <option value="rep1-forfaits">Forfaits</option>
+                  <option value="rep2-devis">Devis</option>
+                  <option value="rep3-autre-demande">Autre demande</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="username" class="form-label">Nom *</label>
+                <input
+                  type="text"
+                  name="username"
+                  id="username"
+                  class="form-control"
+                  required
+                />
+                <br />
+                <span id="error"></span>
+              </div>
+              <div class="mb-3">
+                <label for="email-form" class="form-label"
+                  >Adresse e-mail *</label
+                >
+                <input
+                  type="email"
+                  name="email"
+                  class="form-control"
+                  id="email-form"
+                  required
+                />
+                <div id="emailHelp" class="form-text">
+                  Votre email ne sera pas transmis à des tiers.
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="telephone">Numéro de téléphone (Optionnel)</label>
+                <input
+                  type="telephone"
+                  name="telephone"
+                  class="form-control"
+                  id="telephone"
+                  placeholder="(02) 38 56 58 55"
+                  maxlength="10"
+                  pattern="0-9"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label"
+                  >Écrivez un message</label
+                >
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows="3"
+                  placeholder="Décrivez votre demande..."
+                  name="message"
+                ></textarea>
+              </div>
+              <button id="my-form-button">Envoyer</button>
+
+              <p id="my-form-status"></p>
+            </form>
+          </div>
+
+          <div class="col-md-12 col-lg-5 contact-image-container">
+            <img
+              src="/images/photographer.png"
+              class="contact-image"
+              alt="Image du photographe Charles Cantin"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="/javascript/contact-form.js"></script>
