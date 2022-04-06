@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contactez Charles Cantin, photographe</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+
+  <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-the-top">
+    <i class="fas fa-rocket"></i>
+  </button>
+  
+    <header class= "nav-website">
+   <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-light">
+      <div class="container">
+          <a href="/_site/index.html"><img src="/images/logo.png" alt="Logo de Charles Cantin, Photographe" class="navbar-brand img-fluid" id="logo"/></a>
+          <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="visually-hidden">Toggle navigation</span>
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbarNav" class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link " href="/index.html">Accueil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/galerie">Galerie</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/tarifs-prestations">Tarifs & Prestations</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contact">Contact</a>
+              </li>
+            </ul>
+            <div class="icons-div">
+              <a href="https://www.facebook.com/"><img src="/images/icon-facebook.svg" alt="Icône Facebook de Charles Cantin, Photographe" class="icons" /></a>
+              <a href="https://www.instagram.com/?hl=fr"><img src="/images/icon-instagram.svg" alt="Icône Facebook de Charles Cantin, Photographe"class="icons" /></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    
+<h1 class="text-center"> Contact</h1>
+
+    <section class="contact-form mb-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-lg-5 offset-lg-1 contact-container">
+            <h2 class="mb-4">Laissez moi un message</h2>
+            <p class="mb-5 font-italic">
+              P.S : Je vous répondrai au plus vite pour démarrer ensemble votre
+              projet !
+            </p>
+            <form
+              id="my-form"
+              action="https://formspree.io/f/mnqwbpnq"
+              method="POST"
+            >
+              <div class="form-group mb-3">
+                <label for="reponse-selector">Objet de votre demande</label>
+                <select name="reponse-selector" id="reponse-selector">
+                  <option value="rep1-forfaits">Forfaits</option>
+                  <option value="rep2-devis">Devis</option>
+                  <option value="rep3-autre-demande">Autre demande</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="username" class="form-label">Nom *</label>
+                <input
+                  type="text"
+                  name="username"
+                  id="username"
+                  class="form-control"
+                  required
+                />
+                <br />
+                <span id="error"></span>
+              </div>
+              <div class="mb-3">
+                <label for="email-form" class="form-label"
+                  >Adresse e-mail *</label
+                >
+                <input
+                  type="email"
+                  name="email"
+                  class="form-control"
+                  id="email-form"
+                  required
+                />
+                <div id="emailHelp" class="form-text">
+                  Votre email ne sera pas transmis à des tiers.
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="telephone">Numéro de téléphone (Optionnel)</label>
+                <input
+                  type="telephone"
+                  name="telephone"
+                  class="form-control"
+                  id="telephone"
+                  placeholder="(02) 38 56 58 55"
+                  maxlength="10"
+                  pattern="0-9"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label"
+                  >Écrivez un message</label
+                >
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows="3"
+                  placeholder="Décrivez votre demande..."
+                  name="message"
+                ></textarea>
+              </div>
+              <button id="my-form-button">Envoyer</button>
+
+              <p id="my-form-status"></p>
+            </form>
+          </div>
+
+          <div class="col-md-12 col-lg-5 contact-image-container">
+            <img
+              src="/images/photographer.png"
+              class="contact-image"
+              alt="Image du photographe Charles Cantin"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="/javascript/contact-form.js"></script>
+    <footer class="footer-website">
+     <div class="p-2 text-center">
+         <p class="pb-4">Copyright &copy; <script>document.write(new Date().getFullYear())</script> Jérôme OLLIVIER - Tous droits réservés - </p> 
+         <p>
+            <i class="fa-solid fa-mobile-screen"></i>
+            <a class="phone-footer" href="tel:+33708091011">07 08 09 10 11</a>
+         </p>
+ 
+     </div>    
+</footer>
+
+
+<!-- Scripts JQuery -->     
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer">
+  </script>
+<!-- Scripts JS et Popper bootstrap -->
+  <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous">
+  </script>
+  <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous">
+  </script>
+<!-- Scripts Font Awesome -->
+  <script src="https://kit.fontawesome.com/8ae29c5164.js" crossorigin="anonymous"></script>
+<!-- Scripts Back to Top --> 
+  <script src="/javascript/back-to-top.js"></script>
+    
+  </body>
+</html>
