@@ -235,3 +235,32 @@ margin-top: 5.5rem;
   padding: 0.7rem 1.2rem;
   transition: 0.4s;
 }
+
+
+
+  /***************************/
+/*** TARIFS & PRESTATIONS  ***/
+/*****************************/
+
+
+.prestations-main-block {
+  margin: 45px;
+}
+
+.prestation-name {
+  color: red;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+
+.prestation-price {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.prestation-description {
+  font-size: 0.8rem;
+  line-height: 150%;
+  font-size: 0.9rem;
+}
