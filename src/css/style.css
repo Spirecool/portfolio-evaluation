@@ -172,3 +172,66 @@ h2 {
 .homepage-nav-link {
     color: white;
 }
+
+
+
+/*********************/
+/*** CONTACT PAGE  ***/
+/*********************/
+
+
+
+input:valid {
+  border-bottom: 1px solid green;
+}
+
+input {
+  outline: none;
+}
+
+.contact-container { 
+  padding: 2rem 1.5rem;
+  -webkit-box-shadow: 1px 1px 5px -2px #000000; 
+  box-shadow: 1px 1px 5px -2px #000000;
+}
+
+.contact-image {
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 992px) {
+  .contact-image {
+      width: 45%;       
+      position: fixed;
+      bottom: 0;
+  }
+}
+
+.contact-container , .contact-image-container {
+margin-top: 5.5rem;
+}
+
+@media (min-width: 1040px) {
+  .contact-image-container {
+      position: absolute;
+      right: 0;
+  }
+}
+
+#my-form-button {
+  background-color: white;
+  border: solid 1px black;
+  font-family:Arial, Helvetica, sans-serif;
+  padding: 0.7rem 1.2rem;
+  border-radius: 4px;
+}
+
+#my-form-button:hover {
+  background-color: black;
+  color: white;
+  border: solid 1px black;
+  font-family:Arial, Helvetica, sans-serif;
+  padding: 0.7rem 1.2rem;
+  transition: 0.4s;
+}
