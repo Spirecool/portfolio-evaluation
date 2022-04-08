@@ -1,4 +1,4 @@
-# Node files
+# Ignore Node files
 node_modules
 
 # Ignore images'directory

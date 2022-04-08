@@ -1,12 +1,12 @@
 
 ///////////////////////////////////////////////
-/// BACK TO TOP BUTTON ///
+/// BOUTON RETOUR EN HAUT (back to the top) ///
 ///////////////////////////////////////////////
 
-// get the button
+// obtenir le bouton
 let mybutton = document.getElementById("btn-back-to-the-top");
 
-// when user scrolls down 40px, button appears
+// quand l'utilisateur scroll vers le bas de 40px, faire apparaître le bouton
 window.onscroll = function () {
   scrollFunction();
 };
@@ -21,7 +21,7 @@ function scrollFunction() {
     mybutton.style.display = "none";
   }
 }
-// when user clicks on button, it scrolls up to the top of the document
+// quand l'utilisateur clique sur le bouton, scroller vers le haut du document
 
 mybutton.addEventListener("click", backToTop);
 

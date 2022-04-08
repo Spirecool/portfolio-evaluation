@@ -1,12 +1,11 @@
-/* Fichier de configuration de Eleventy */
+/* Fichier de configuration */
 
 module.exports = function(eleventyConfig) {
-    // Répertoires ajoutés
+
     eleventyConfig.addPassthroughCopy("./src/images");
     eleventyConfig.addPassthroughCopy("./src/_includes");
     eleventyConfig.addPassthroughCopy("./src/javascript");
     eleventyConfig.addPassthroughCopy("./src/css");
-
     return {
      
         dir: {
@@ -15,3 +14,4 @@ module.exports = function(eleventyConfig) {
         }
     }
 }
+

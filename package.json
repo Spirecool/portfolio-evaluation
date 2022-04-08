@@ -1,5 +1,5 @@
 {
   "dependencies": {
-    "contentful-cli": "^1.12.9"
+    "contentful": "^9.1.18"
   }
 }
